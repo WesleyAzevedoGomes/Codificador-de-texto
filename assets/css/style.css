@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+input {
+  outline: none;
+}
+.titulo {
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+.main {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.box {
+  width: 400px;
+  height: 150px;
+  margin-top: 30px;
+  
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+.input-encrypt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.input-encrypt-encrypt {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 0.2px solid black;
+}
+.btn-encrypt {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #0a3871;
+  color: #fff;
+  height: 40px;
+  cursor: pointer;
+}
+.btn-encrypt:hover {
+  background-color: #d8dfe8;
+  color: #0a3871;
+  transition: all linear 0.2s;
+}
+.btn-decrypt {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #0a3871;
+  background-color: #d8dfe8;
+  color: #0a3871;
+  height: 40px;
+  cursor: pointer;
+}
+.btn-decrypt:hover {
+  background-color: #0a3871;
+  color: #d8dfe8;
+  transition: all linear 0.2s;
+}
+
+
+.text-encrypt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.input-encrypt-result {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 0.2px solid black;
+}
+.encrypt-copy {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #0a3871;
+  background-color: #fff;
+  color: #0a3871;
+  height: 40px;
+  cursor: pointer;
+}
+.encrypt-copy:hover {
+  background-color: #0a3871;
+  color: #d8dfe8;
+  transition: all linear 0.2s;
+}
+@media (min-width: 401px) and (max-width: 560px) {
+  main.main {
+    flex-direction: column;
+  }
+}
+@media (max-width: 400px) {
+  main.main {
+    flex-direction: column;
+  }
+  .box{
+    width: 300px;
+  }
+}
